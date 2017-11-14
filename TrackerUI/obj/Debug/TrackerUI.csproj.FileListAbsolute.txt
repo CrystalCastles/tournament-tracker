@@ -1,0 +1,9 @@
+c:\users\danie\documents\visual studio 2015\Projects\TournamentTracker\TrackerUI\bin\Debug\TrackerUI.exe.config
+c:\users\danie\documents\visual studio 2015\Projects\TournamentTracker\TrackerUI\bin\Debug\TrackerUI.exe
+c:\users\danie\documents\visual studio 2015\Projects\TournamentTracker\TrackerUI\bin\Debug\TrackerUI.pdb
+c:\users\danie\documents\visual studio 2015\Projects\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csprojResolveAssemblyReference.cache
+c:\users\danie\documents\visual studio 2015\Projects\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.Properties.Resources.resources
+c:\users\danie\documents\visual studio 2015\Projects\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.TournamentViewerForm.resources
+c:\users\danie\documents\visual studio 2015\Projects\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.csproj.GenerateResource.Cache
+c:\users\danie\documents\visual studio 2015\Projects\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.exe
+c:\users\danie\documents\visual studio 2015\Projects\TournamentTracker\TrackerUI\obj\Debug\TrackerUI.pdb
