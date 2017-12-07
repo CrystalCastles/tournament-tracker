@@ -22,7 +22,7 @@ namespace TrackerLibrary
             if (textFiles)
             {
                 // TODO - Create the Text Connection
-                TestConnector text = new TextConnector();
+                TextConnector text = new TextConnector();
                 Connections.Add(text);
             }
         }
