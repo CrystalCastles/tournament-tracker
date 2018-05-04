@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 using TrackerLibrary.Models;
 
 // * Load the text file
-// Convert the text to List<PrizeModel>
+// * Convert the text to List<PrizeModel>
 // Find the max ID
 // Add the new record with the new ID (max + 1)
 // Convert the prizes to list<string>
 // Save the list<string> to the text file
 
-namespace TrackerLibrary.DataAccess.TextConnector
+namespace TrackerLibrary.DataAccess.TextHelpers
 {
     public static class TextConnectorProcessor
     {
@@ -44,7 +44,26 @@ namespace TrackerLibrary.DataAccess.TextConnector
 
                 PrizeModel p = new PrizeModel();
                 p.Id = int.Parse(cols[0]);
+                p.PlaceNumber = int.Parse(cols[1]);
+                p.PlaceName = cols[2];
+                p.PrizeAmount = decimal.Parse(cols[3]);
+                p.PrizePercentage = double.Parse(cols[4]);
+                output.Add(p);
             }
+
+            return output;
+        }
+
+        public static void SaveToPrizeFile(this List<PrizeModel> models, string fileName)
+        {
+            List<string> lines = new List<string>();
+
+            foreach (PrizeModel p in models)
+            {
+                lines.Add($"{ p.Id },{ p.PlaceNumber },{ p.PlaceName },{ p.PrizeAmount },{ p.PrizePercentage }");
+            }
+
+            File.WriteAllLines(fileName.FullFilePath(), lines);
         }
     }
 }
