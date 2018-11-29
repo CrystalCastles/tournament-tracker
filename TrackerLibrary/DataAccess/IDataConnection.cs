@@ -11,5 +11,7 @@ namespace TrackerLibrary.DataAccess
     {
         // Contract, always public
         PrizeModel CreatePrize(PrizeModel model);
+
+        PersonModel CreatePerson(PersonModel model);
     }
 }
